@@ -1,0 +1,36 @@
+span {
+    color: lightslategray;
+}
+
+.arial {
+    font-family: arial;
+}
+
+.crouge {
+    color: red;
+}
+
+.cbleu {
+    color: blue;
+}
+
+.cvert {
+    color: green;
+}
+
+.mono {
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.brouge {
+    background-color: red;
+}
+
+.bbleu {
+    background-color: blue;
+}
+
+.bvert {
+    background-color: green;
+}
