@@ -1,0 +1,9 @@
+body {
+    background-image: linear-gradient( rgba(255, 192, 203, 0.356), rgb(202, 202, 202)), url(img/background.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+input {
+    margin-bottom: 10px;
+}
