@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#bg1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(img/detoxcuresmoothie.jpg);
+    height: 650px;
+    background-position: center;
+    background-size: cover;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Playfair Display", serif;
+}
+
+.container {
+    max-width: 1060px;
+    margin: auto;
+}
+
+
+/*  Header */
+
+header {
+    min-height: 650px;
+}
+
+header img {
+    width: 150px;
+}
+
+#top {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+header h1 {
+    text-align: center;
+    color: white;
+    margin-top: 150px;
+    font-family: "Playfair Display", serif;
+    font-size: 40px;
+    letter-spacing: 5px;
+}
+
+header nav {
+    margin-top: 40px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+
+/*  Section devise  */
+
+#devise {
+    display: flex;
+    justify-content: space-around;
+}
+
+#devise img {
+    width: 300px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.devise {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.devise h2 {
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+
+/* Section methode */
+
+#bg2 {
+    min-height: 700px;
+    background: linear-gradient(#feb4c3, #f59e28);
+}
+
+#methode {
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+
+.methode {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.methode img {
+    margin: auto;
+}
+
+
+/* Section concept */
+
+#concept {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+#h2concept {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.groupeconcept {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.groupeconcept h3 {
+    margin-bottom: 5px;
+}
+
+
+/*  Section footer  */
+
+footer {
+    text-align: center;
+    background-color: #f59e28;
+    padding: 10px;
+    color: white;
+}
+
+
+/* Section responsive */
+
+@media (max-width: 767px) {
+    /* css qui s'appliquera de 0px à 767px = MOBILE */
+    #top {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    #devise {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    #concept {
+        flex-direction: column;
+    }
+}
