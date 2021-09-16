@@ -1,0 +1,203 @@
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+.container {
+    max-width: 1060px;
+    margin: auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Cormorant Unicase", serif;
+}
+
+
+/* Header */
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.137), rgba(0, 0, 0, 0.514)), url("img/perso.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-position-y: 30%;
+    color: white;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    list-style-type: none;
+    align-items: center;
+}
+
+header nav ul li a:not(img) {
+    text-decoration: none;
+    margin: 0 30px;
+    color: white;
+    font-family: "Cormorant Unicase", serif;
+}
+
+header nav ul img {
+    width: 150px;
+}
+
+#titre {
+    text-align: center;
+    padding: 100px 0 150px 0;
+}
+
+#titre h1 {
+    font-size: 60px;
+    margin: 0;
+}
+
+
+/* Aventure */
+
+#aventure {
+    text-align: center;
+    margin: 50px 0;
+}
+
+#aventure h2 {
+    font-size: 40px;
+}
+
+ol {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    counter-reset: item;
+    padding: 0;
+}
+
+ol li {
+    width: 30%;
+    counter-increment: item;
+}
+
+ol li::before {
+    content: "0" counter(item);
+    color: rgba(79, 17, 34, 0.2);
+    font-size: 80px;
+    font-family: "Cormorant Unicase", serif;
+    position: absolute;
+    margin-left: 5px;
+    margin-top: -20px;
+}
+
+ol li h3 {
+    margin-left: 20px;
+    font-size: 25px;
+}
+
+
+/* Communauté */
+
+#communauté {
+    margin: 50px 0;
+    text-align: center;
+    border: rgba(79, 17, 34) solid 2px;
+    padding: 0 50px;
+}
+
+#communauté p {
+    margin-bottom: 50px;
+}
+
+#blocperso {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#blocperso img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+/* Rencontres */
+
+#rencontres .container {
+    display: flex;
+    align-items: center;
+}
+
+#rencontres .container h2 {
+    font-size: 30px;
+}
+
+#rencontres img {
+    width: 30%;
+    margin-right: 50px;
+}
+
+
+/* C'est parti */
+
+#bgfindepage {
+    background-image: url(img/gandalf.jpg);
+    background-size: cover;
+    background-position-y: 30%;
+    text-align: center;
+    color: white;
+    height: 400px;
+}
+
+#bgfindepage h2 {
+    font-size: 40px;
+    padding-top: 200px;
+    margin-bottom: 50px;
+}
+
+#bgfindepage a {
+    text-decoration: none;
+    color: white;
+    border: white solid 2px;
+    padding: 10px 20px;
+    font-family: "Cormorant Unicase", serif;
+    font-size: 20px;
+}
+
+#bgfindepage a:hover {
+    background-color: white;
+    color: rgba(79, 17, 34);
+}
+
+
+/* Footer */
+
+footer {
+    background-color: rgba(79, 17, 34);
+}
+
+footer .container {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+footer img {
+    width: 100px;
+}
+
+footer .container #footerright {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+footer .container #footerright a {
+    color: white;
+    text-decoration: none;
+    padding-bottom: 3px;
+}
