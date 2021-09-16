@@ -1,0 +1,220 @@
+/* Général */
+
+body {
+    margin: 0;
+    max-width: 1060px;
+    margin: auto;
+    font-family: "Raleway", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Mandali", sans-serif;
+}
+
+h2 {
+    color: #6e8e9b;
+}
+
+a {
+    text-decoration: none;
+}
+
+.vertical {
+    height: 50px;
+    border-left: #6e8e9b solid 3px;
+    margin-bottom: 35px;
+}
+
+
+/* Header */
+
+header {
+    background-image: url(img/yogamat.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 30px;
+}
+
+#top {
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav {
+    margin-top: 20px;
+}
+
+header nav a {
+    margin-left: 10px;
+    color: white;
+}
+
+header nav a:hover {
+    color: #6e8e9b;
+}
+
+#titre {
+    margin: 150px 0px;
+    text-align: center;
+}
+
+#titre h1 {
+    font-size: 50px;
+    letter-spacing: 10px;
+    margin-bottom: 0;
+}
+
+#titre p {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+#titre a {
+    background-color: white;
+    border-radius: 100px;
+    padding: 10px 20px;
+    color: #6e8e9b;
+    transition: all 0.3s ease;
+}
+
+#titre a:hover {
+    background-color: #6e8e9b;
+    color: white;
+    padding: 15px 25px;
+}
+
+
+/* Concept */
+
+.concept {
+    display: flex;
+    align-items: center;
+}
+
+.concept:nth-of-type(2) {
+    flex-direction: row-reverse;
+}
+
+.concept img {
+    width: 40px;
+    height: 40px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 100px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Cours */
+
+#cours {
+    display: flex;
+    align-items: center;
+}
+
+#cours img {
+    width: 500px;
+}
+
+#vinyasa {
+    margin-left: 40px;
+}
+
+
+/* Contact */
+
+label:first-child {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]+label {
+    padding: 10px 20px;
+    border-radius: 50px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
+    margin-left: 20px;
+}
+
+input[type="radio"]:checked+label {
+    color: white;
+    background-color: #6e8e9b;
+}
+
+input[type="radio"]:hover+label {
+    background-color: #6e8e9b;
+}
+
+input[type="text"] {
+    border-radius: 50px;
+    border: none;
+    padding: 10px;
+    width: 400px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    box-shadow: inset 3px 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+::placeholder {
+    color: #6e8e9b;
+    padding-left: 10px;
+}
+
+button {
+    padding: 10px 20px 10px 20px;
+    border-radius: 50px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
+    border: none;
+    background-color: white;
+    color: #6e8e9b;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #6e8e9b;
+    color: white;
+}
+
+footer {
+    background-color: #6e8e9b;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    margin-top: 40px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 990px) {
+    body {
+        margin: 20px;
+    }
+    .concept:nth-of-type(2) {
+        flex-direction: row;
+    }
+    #cours img {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        margin: 20px;
+    }
+    .concept:nth-of-type(2) {
+        flex-direction: column;
+    }
+    .concept {
+        flex-direction: column;
+    }
+    .articleconcept {
+        text-align: center;
+    }
+    #cours img {
+        width: 300px;
+    }
+}
