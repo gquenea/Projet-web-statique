@@ -1,0 +1,317 @@
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+    max-width: 1060px;
+    margin: auto;
+}
+
+.btn {
+    background-color: rgb(124, 40, 99);
+    padding: 10px 20px;
+    color: white;
+}
+
+.btn:hover {
+    background-color: rgb(124, 40, 99, 0.8);
+    color: white;
+}
+
+
+/* Header */
+
+header {
+    background-image: linear-gradient( to top right, rgb(56, 29, 48, 0.7), rgb(56, 29, 48, 0.5), rgba(0, 0, 0, 0.1)), url(img/fitness.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+header #top {
+    display: flex;
+    justify-content: space-between;
+}
+
+header img {
+    width: 50px;
+    height: 50px;
+    margin: 10px 20px;
+}
+
+header nav ul {
+    display: flex;
+    margin-right: 20px;
+}
+
+header nav ul li {
+    padding: 0 10px;
+    margin-top: 20px;
+}
+
+header nav ul li a:hover {
+    color: rgb(124, 40, 99);
+}
+
+header #titre {
+    text-align: center;
+    margin: 150px;
+    padding-bottom: 200px;
+}
+
+header #titre h1 {
+    font-size: 70px;
+    font-weight: 900;
+    font-style: italic;
+    margin-bottom: 25px;
+}
+
+header #titre p {
+    font-weight: bold;
+    margin-top: 0;
+}
+
+
+/*  programme */
+
+#crossfit {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(img/fitnessman.jpg);
+    margin-top: -250px;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 0 100px;
+    box-shadow: 2px 1px 4px black;
+}
+
+#crossfit p {
+    margin-top: 100px;
+}
+
+#fullbody {
+    background-image: linear-gradient( to right, rgba(124, 40, 99, 0.5), rgb(124, 40, 99, 0.3)), url(img/fitnesswoman.jpg);
+    margin-top: -250px;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 0 100px;
+    box-shadow: 2px 1px 4px black;
+}
+
+#fullbody p {
+    margin-top: 100px;
+}
+
+#programme .container {
+    display: flex;
+    justify-content: center;
+}
+
+#programme .container article div {
+    text-align: center;
+}
+
+
+/* Objectif */
+
+#objectif {
+    margin: 100px;
+    text-align: center;
+}
+
+
+/* 4 iconnes  */
+
+#quatreicones nav ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+#quatreicones nav ul li {
+    width: 25%;
+    text-align: center;
+    border-top: rgba(199, 199, 199, 0.986) solid 1px;
+    border-left: rgba(199, 199, 199, 0.986) solid 1px;
+    padding-bottom: 50px;
+}
+
+#quatreicones nav ul li:first-child {
+    border-left: none;
+}
+
+#quatreicones nav ul li img {
+    width: 40px;
+    margin-top: 50px;
+}
+
+
+/* Bannière */
+
+#banniere {
+    background-image: linear-gradient( to right, rgba(124, 40, 99, 0.5), rgb(124, 40, 99, 0.3), rgba(0, 0, 0, 0) 55%, rgb(0, 0, 0) 55%), url(img/crossfit.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#banniere .container {
+    color: white;
+    display: flex;
+    justify-content: end;
+}
+
+#banniere .container #contenubanniere {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    padding: 70px;
+}
+
+#banniere .container #contenubanniere h2 {
+    margin-left: -100px;
+}
+
+#banniere .container #contenubanniere p {
+    margin-bottom: 50px;
+}
+
+
+/*  6 icones */
+
+#sixicones {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#sixicones div {
+    width: calc(100% / 3);
+    text-align: center;
+}
+
+#sixicones div:nth-child(odd) {
+    background-color: rgba(128, 128, 128, 0.096);
+}
+
+#sixicones div img {
+    width: 50px;
+    margin-top: 50px;
+}
+
+#sixicones div p {
+    margin: 0 50px 50px 50px;
+}
+
+
+/* carte */
+
+iframe {
+    width: 100%;
+}
+
+
+/* Footer */
+
+footer {
+    color: white;
+    background: linear-gradient(rgba(124, 40, 99) 2%, black 0%);
+}
+
+footer .container {
+    display: flex;
+    justify-content: center;
+    max-height: 500px;
+    font-size: 12px;
+    margin-top: -4px;
+}
+
+footer img {
+    width: 60px;
+}
+
+#footerleft {
+    width: 30%;
+    text-align: right;
+    padding: 30px 30px 0 0;
+}
+
+#footerleft i {
+    padding-left: 10px;
+    padding-bottom: 150px;
+}
+
+#nouscontacter {
+    color: black;
+    background-color: white;
+    width: 40%;
+    text-align: center;
+    height: 350px;
+    margin-top: -100px;
+    z-index: 1;
+    box-shadow: 2px 1px 4px black;
+}
+
+#nouscontacter h2 {
+    font-size: 16px;
+}
+
+#nouscontacter form {
+    padding: 20px;
+}
+
+#nouscontacter form input:not(.btn) {
+    margin: 30px 0;
+    display: block;
+    border: none;
+    margin: auto;
+    border-bottom: solid black 1px;
+    width: 70%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#nouscontacter form input::placeholder {
+    color: black;
+}
+
+#nouscontacter form input[type="submit"] {
+    border: none;
+}
+
+#footerright {
+    width: 30%;
+}
+
+#footerright p {
+    margin: 5px 10px;
+}
+
+#footerright h4 i {
+    color: rgb(124, 40, 99);
+}
+
+
+/* Responsive */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #sixicones div {
+        width: 50%;
+    }
+    #sixicones div:nth-of-type(odd) {
+        background-color: white;
+    }
+    #sixicones div:nth-of-type(2),
+    #sixicones div:nth-of-type(3),
+    #sixicones div:nth-of-type(6) {
+        background-color: rgba(128, 128, 128, 0.096);
+    }
+}
